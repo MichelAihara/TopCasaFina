@@ -250,22 +250,22 @@
 			</div>
 
 			<!-- Inicio do formulario-->
-			<div class="container col-sm-6">
+			<div class="container col-sm-6" id="form-contato">
 				<section id="contato">
 					<h2>Contato</h2>
 					<p>Entre em contato conosco</p>
 				
-					<form>
+					<form action="enviar.php" method="post">
 						<div class="form-group">
 							<label for="contato-name">Nome:</label>
-							<input class="form-control" id="contato-name"type="text" placeholder="Seu Nome">
+							<input class="form-control" name="contato-name" type="text" placeholder="Seu Nome">
 						</div>
 						
 						<div class="form-group">
 							<label for="contato-email">Email:</label>
 							<div class="input-group">
 								<div class="input-group-addon">@</div>
-								<input class="form-control" id="contato-email" type="email" placeholder="Seu e-mail">
+								<input class="form-control" name="contato-email" type="email" placeholder="Seu e-mail">
 							</div>
 						</div>
 
@@ -289,7 +289,7 @@
 						Espaço devido a bug do HTML para posicionar corretamente
 						--><select class="contato-select form-control" name="tipo-solicitacao">
 							<option disabled selected>Tipo de Situação</option>
-							<option value="casa">Casa</option>
+							<option value="casa" checked>Casa</option>
 							<option value="Apartamento">Apartamento</option>
 							<option value="mansao">Mansão</option>
 						</select>
